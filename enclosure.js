@@ -3,4 +3,8 @@ const Enclosure = function() {
 
 }
 
+Enclosure.prototype.addDinosaur = function(dinosaur) {
+  this.enclosure.push(dinosaur);
+};
+
 module.exports = Enclosure;

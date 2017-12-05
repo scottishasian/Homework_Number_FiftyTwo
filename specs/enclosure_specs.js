@@ -15,4 +15,9 @@ describe('Enclosure', function() {
     assert.strictEqual(enclosure.enclosure.length, 0)
   });
 
+  it("Should be able to add one dinosaur", function() {
+    enclosure.addDinosaur(dinosaur);
+    assert.strictEqual(enclosure.enclosure.length, 1)
+  });
+
 });
