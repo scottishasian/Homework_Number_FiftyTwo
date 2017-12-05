@@ -12,6 +12,10 @@ describe('Dinosaur', function() {
     assert.strictEqual(dinosaur.species, "Velociraptor");
   })
 
+  it("Should have a name", function() {
+    assert.strictEqual(dinosaur.name, "Clever Girl");
+  })
+
 
 
 });
