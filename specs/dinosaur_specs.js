@@ -16,6 +16,10 @@ describe('Dinosaur', function() {
     assert.strictEqual(dinosaur.name, "Clever Girl");
   })
 
+  it("Should have a max number of offspring per year", function() {
+    assert.strictEqual(dinosaur.maxOffspring, 3);
+  });
+
 
 
 });
