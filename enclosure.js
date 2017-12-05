@@ -15,4 +15,16 @@ Enclosure.prototype.removeSpecies = function(species) {
   }
 };
 
+
+Enclosure.prototype.findDinosaursByMaxOffspring = function(offspring) {
+  var list = [];
+  for(var dino of this.enclosure){
+    if(dino.maxOffspring >= offspring){
+      list.push(dino);
+    }
+  }
+  return list;
+};
+
+
 module.exports = Enclosure;
