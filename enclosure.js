@@ -26,5 +26,15 @@ Enclosure.prototype.findDinosaursByMaxOffspring = function(offspring) {
   return list;
 };
 
+Enclosure.prototype.predictedNumbers = function(years) {
+  var count = 0;
+  for(var dino of this.enclosure){
+    var dinos = dino.maxOffspring * years;
+    count += dinos;
+  }
+  count += this.enclosure.length;
+  return count;
+};
+
 
 module.exports = Enclosure;

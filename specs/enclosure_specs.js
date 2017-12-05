@@ -42,4 +42,12 @@ describe('Enclosure', function() {
     assert.strictEqual(result.length, 3)
   });
 
+  it("Should be able to calculate number of dinosaurs in 2 years", function() {
+    enclosure.addDinosaur(dinosaur);
+    enclosure.addDinosaur(dinosaur4);
+    assert.strictEqual(enclosure.enclosure.length, 2)
+    result = enclosure.predictedNumbers(2);
+    assert.strictEqual(result, 32);
+  });
+
 });
